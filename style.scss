@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', "sans-serif";
+}
+
+.header {
+  width: 100%;
+
+  &-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    &-text {
+      float: left;
+      width: 430px;
+      margin-top: 124px;
+      margin-left: 178px;
+
+      &-company-name {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 43px;
+        position: relative;
+        margin-left: 10px;
+
+        &::before {
+          content: '';
+          width: 4px;
+          height: 34px;
+          background-color: #36bbe4;
+          position: absolute;
+          left: -9px;
+          top: 8px;
+        }
+      }
+
+      &-describe {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
+      }
+
+      &-list {
+        width: 388px;
+        margin-top: 36px;
+
+        &-element {
+          list-style: none;
+          color: #333333;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          text-align: left;
+          margin-bottom: 70px;
+
+          &:last-child {
+            margin-bottom:0;
+          }
+          
+          &::after {
+            content: '';
+            display: table;
+            clear: both;
+          }
+          
+          img {
+            float: left;
+            margin-right: 33px;
+          }
+        }
+      }
+    }
+    &-image {
+      margin-left: 629px;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  transform: skewY(-9deg);
+  box-shadow: 0 0 40px grey;
+  margin-top: -413px;
+  background-color: #fff;
+
+  &-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    transform: skewY(9deg);
+    padding-top: 90px;
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    &-image {
+      float: left;
+      margin-left: 131px;
+    }
+
+    &-text {
+      margin-right: 197px;
+      margin-left: 887px;
+      position: relative;
+
+      &-header {
+        margin-bottom: 36px;
+        @extend .header-container-text-describe;
+      }
+
+      &-paragraph {
+        list-style: none;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        margin-bottom: 79px;
+      }
+
+      &-link {
+        text-decoration: none;
+        background-color: #36bbe4;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+        padding: 26px 35px 23px;
+        display: block;
+        width: 245px;
+
+        span {
+          margin-left:10px;
+          margin-right:10px;
+        }
+      }
+
+
+
+    }
+  }
+}
+
+.slick-arrow-left {
+  position: absolute;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  right: 60px;
+  bottom: 26px;
+  z-index: 100000000;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.slick-arrow-right {
+  position: absolute;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  right: 0;
+  bottom: 26px;
+  z-index: 100000000;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 200px;
+
+  &-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 81px;
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    &-text {
+      float: left;
+      margin-left: 179px;
+      max-width: 500px;
+
+      &-way {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 43px;
+        position: relative;
+        margin-left: 10px;
+
+        &::before {
+          content: '';
+          width: 4px;
+          height: 34px;
+          background-color: #605dfa;
+          position: absolute;
+          left: -9px;
+          top: 8px;
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+        background-color: #605dfa;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 26px 35px 23px;
+        display: block;
+        max-width: 245px;
+        margin-top: 47px;
+
+        span {
+          margin-left:10px;
+          margin-right:10px;
+        }
+      }
+    }
+
+    &-images {
+      margin-left: 751px;
+      margin-top: -188px;
+
+    }
+  }
+}
+
+@import 'media';

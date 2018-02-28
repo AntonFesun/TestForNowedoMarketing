@@ -1,0 +1,155 @@
+@media screen and (max-width: 1516px) {
+
+  .content-container-image {
+    margin: 0;
+  }
+
+  .content-container-text {
+    margin-right: 26px;
+    margin-left: 680px;
+  }
+  .footer-container-images {
+    margin-left: 679px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header-container-text {
+    margin-left: 30px;
+  }
+
+  .header-container-image {
+    margin-left: 460px;
+  }
+
+  .content-container-image {
+    display: none;
+  }
+
+  .content-container-text {
+    margin: 0 20px;
+
+    &-paragraph {
+      margin-bottom: 50px;
+    }
+  }
+
+  .content-container-text-link {
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .footer-container-text {
+    margin: 0 20px;
+    max-width: 100%;
+  }
+
+  .footer-container-images {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 736px) {
+
+  .header-container-image {
+    display: none;
+  }
+
+  .header-container-text {
+    margin: 0;
+    float: none;
+    width: 100%;
+
+    &-company-name {
+      text-align: center;
+    }
+
+    &-describe {
+      text-align: center;
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+  .header-container-text-list-element {
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .content-container-text-link {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .header-container-text-list {
+    width: auto;
+  }
+
+  .header-container-text-list-element {
+    img {
+      display: none;
+    }
+  }
+
+  .content-container-text-link {
+    width: auto;
+
+    img {
+      display: none;
+    }
+    span {
+      margin: 0;
+      display: block;
+      text-align: center;
+    }
+
+  }
+
+  .footer-container-text {
+    margin: 0 auto;
+
+    &-paragraph {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &-way {
+      text-align: center;
+    }
+
+    &-link {
+      margin: 20px auto;
+      width: auto;
+
+      img {
+        display: none;
+      }
+
+      span {
+        margin: 0;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}
+
